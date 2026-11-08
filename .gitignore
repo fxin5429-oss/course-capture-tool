@@ -1,0 +1,20 @@
+# 构建输出
+dist/
+
+# 运行时生成
+配置.xml
+日志/
+临时/
+课件/
+
+# 开发资料：体积大或不适合公开
+_backup/
+test/
+tools/
+*.rar
+*.log
+
+# 系统与 Office 临时文件
+~$*
+Thumbs.db
+desktop.ini
