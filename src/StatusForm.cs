@@ -25,7 +25,7 @@ namespace CourseCapture
             MinimizeBox = false;
             StartPosition = FormStartPosition.CenterScreen;
             Font = new Font("Microsoft YaHei UI", 9f);
-            try { Icon = IconFactory.CreateTrayIcon(); } catch { }
+            try { Icon = IconFactory.CreateIcon(32); } catch { }
 
             Label title = new Label();
             title.Text = "课件捕手已在运行";

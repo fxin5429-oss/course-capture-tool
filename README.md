@@ -11,9 +11,9 @@
 | 项目 | 说明 |
 | --- | --- |
 | 最新版 | [GitHub Releases](https://github.com/fxin5429-oss/course-capture-tool/releases/latest) |
-| 当前版本 | v1.0.1 |
+| 当前版本 | v1.0.2 |
 | 运行环境 | Windows 7 SP1 / 10 / 11；.NET Framework 4.0 或更高（Win10/11 自带） |
-| 文件校验 | `课件捕手.exe` SHA256：`3F586F1756597619F1D95BD019BF484F3EDFE28913AAEE0C5204835553441200` |
+| 文件校验 | `课件捕手.exe` SHA256：`E3443E739F6AA80E20625CA27D305FF8F2CDC209A9C5FAC95EAE77F658D8EE01` |
 
 程序没有代码签名，Windows 可能提示“未知发布者”。可以点“更多信息 → 仍要运行”，或从源码自行构建。下载后建议核对上面的 SHA256。
 
@@ -114,4 +114,4 @@ powershell -NoProfile -ExecutionPolicy Bypass -File .\build.ps1
 
 ---
 
-当前版本 **1.0.1**。
+当前版本 **1.0.2**。

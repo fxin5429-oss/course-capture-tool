@@ -44,7 +44,11 @@ $cscArgs = @(
     '/nologo', '/target:winexe', '/platform:anycpu', '/optimize+', '/codepage:65001',
     ('/out:' + (Join-Path $dist '课件捕手.exe'))
 )
-if (Test-Path $icon) { $cscArgs += '/win32icon:' + $icon }
+if (Test-Path $icon) {
+    $cscArgs += '/win32icon:' + $icon
+    # 同时作为托管资源嵌入，供 IconFactory 在托盘/窗口标题栏按 DPI 选尺寸。
+    $cscArgs += '/resource:' + $icon + ',CourseCapture.ico'
+}
 foreach ($r in $refs) { $cscArgs += '/reference:' + $r }
 $cscArgs += $sources
 
